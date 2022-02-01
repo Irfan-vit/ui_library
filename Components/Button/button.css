@@ -1,0 +1,135 @@
+@import url("../../main.css");
+@import url('../../colors.css');
+@import url('../../typography.css');
+
+/* common button styles */
+button{
+    padding: var(--space-unit);
+    border-radius: var(--space-sm);
+    border: none;
+    margin: 20px;
+    cursor: pointer;
+    min-width: var(--space-xxxl);
+}
+button > a{
+    text-decoration: none;
+    color: var(--text-color-on-primary);
+}
+button > a:focus,button > a:active{
+    text-decoration: none;
+    color: var(--neutral-color);
+}
+
+button > span {
+    margin-right: var(--space-xs);
+}
+
+.btn{
+    font-size: var(--helperText);
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.btn:hover{
+    outline: var(--space-xxxs) solid var(--neutral-color-200);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; 
+}
+
+.large{
+    font-weight: 500;
+    font-size: var(--paragraph);
+}
+
+.btn:disabled{
+    background: var(--disabled-color);
+    color: var(--text-on-disabled);
+    cursor: not-allowed;
+}
+
+/* Default Button styles*/
+#default_btn{
+    color: var(--text-color-inverted);
+    background-color: var(--textColor);
+}
+#default_btn:hover{
+    background-color: var(--dark-neutral-color);
+    outline: var(--space-xxxs) solid var(--default-color);
+}
+#default_btn:focus,#default_btn:active{
+    background-color: var(--dark-color);
+}
+
+/* outline button styles */
+.btn_otl_default{
+    background-color: var(--text-color-on-primary);
+    color: var(--textColor);
+    border: 2px solid #272727;
+    box-shadow: none;
+}
+
+.btn_otl_default:hover{
+    color: var(--text-color-inverted);
+    background-color: var(--textColor);
+}
+
+.btn_otl_default:focus,.btn_otl_default:active{
+    background-color: var(--text-on-disabled);
+    color:var(--textColor);
+    opacity: 0.7;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; 
+}
+
+.btn_otl_primary{
+    background-color: var(--text-color-on-primary);
+    color: var(--textColor);
+    border: 2px solid var(--primary-color);
+    box-shadow: none;
+}
+
+.btn_otl_primary:hover{
+    color: var(--text-color-on-primary);
+    background-color: var(--primary-color);
+}
+
+.btn_otl_primary:focus,.btn_otl_primary:active{
+    background-color: var(--Primary-color-active);
+    color:var(--text-color-on-primary);
+    opacity: 0.7;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; 
+}
+
+/* link button styles*/
+
+.link_btn{
+    border: none;
+    background-color: var(--primary-sky-color);
+    font-size:var(--paragraph);
+    font-weight: 600;
+    padding: var(--space-sm) var(--space-unit);
+    margin: var(--space-xs);
+    border-radius: 1px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.link_btn:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; 
+}
+
+/* float button styles*/
+.float{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--space-xxl);
+    height: var(--space-xxl);
+}
+
+.float > span{
+    margin: 0;
+    padding: 0;
+    font-size:var(--header1);
+}

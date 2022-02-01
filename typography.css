@@ -1,0 +1,46 @@
+:root{
+    --header1: 1.8rem;
+    --header2: 1.6rem;
+    --header3: 1.4rem;
+    --header4: 1.2rem;
+    --header5: 1.1rem;
+    --paragraph: 1rem;
+    --helperText: 0.8rem;
+    --copyrightText: 0.7rem;
+    --smallText:0.5rem;
+
+    /* SPACING */
+
+    --space-unit: 1em;
+    --space-xxxs:  calc(0.15 * var(--space-unit));
+    --space-xxs:  calc(0.25 * var(--space-unit));
+    --space-xs:   calc(0.5 * var(--space-unit));
+    --space-sm:   calc(0.75 * var(--space-unit));
+    --space-md:   calc(1.25 * var(--space-unit));
+    --space-lg:   calc(2 * var(--space-unit));
+    --space-xl:   calc(3.25 * var(--space-unit));
+    --space-xxl:  calc(5.25 * var(--space-unit));
+    --space-xxxl:  calc(5.50 * var(--space-unit));
+
+    --component-padding: var(--space-sm);
+}
+
+
+h1{
+    font-size: var(--header1);
+}
+h2{
+    font-size: var(--header2);
+}
+h3{
+    font-size: var(--header3);
+}
+h4{
+    font-size: var(--header4);
+}
+h5{
+    font-size: var(--header5);
+}
+p{
+    font-size: var(--header6);
+}

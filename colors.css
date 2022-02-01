@@ -1,0 +1,30 @@
+:root {
+    --error-color: #d0454c;
+    --error-color-hover: #b54248;
+    --error-color-active: #95353a;
+
+    --success-color: #529e66;
+    --success-color-hover: #367b48;
+    --success-color-active: #276738;
+
+    --Primary-color-active: #3a36e0;
+    --Primary-color-hover: #030086;
+    --primary-color: #0804b8;
+    --primary-sky-color: #4cc9f0;
+    --blue-color-400: #5f25a4;
+    --blue-color-500: #050449;
+
+    --warning-color: #e1c542;
+    --warning-color-hover: #cab23f;
+    --warning-color-active: #b49e35;
+
+    --text-color-on-primary: #ffffff;
+    --text-color-inverted: white;
+    --neutral-color-200: #f4f5f7;
+    --text-on-disabled: #e1e1e1;
+    --disabled-color: #737581;
+    --neutral-color: #4a4b53;
+    --dark-neutral-color:#2c2c2c;
+    --dark-color: #292929;
+    --textColor: #000000;
+}

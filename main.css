@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,200&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
+*,*:after,*:before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 16px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+main{
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* primary theme */
+#primary{
+    color: var(--text-color-on-primary);
+    background-color: var(--primary-color);
+    outline: var(--space-xxxs) solid var(--Primary-color);
+}
+#primary:hover{
+    background-color: var(--Primary-color-hover);
+    outline: var(--space-xxxs) solid var(--Primary-color);
+    
+}
+#primary:focus, #primary:active{
+    background-color: var(--Primary-color-active);
+}
+
+/* success theme */
+#success{
+    color: var(--text-color-on-primary);
+    background-color: var(--success-color);
+}
+#success:hover{
+    background-color: var(--success-color-hover);
+    outline: var(--space-xxxs) solid var(--success-color);
+}
+#success:focus, #success:active{
+    background-color: var(--success-color-active);
+}
+
+/* warning theme */
+#warning{
+    color: var(--text-color-on-primary);
+    background-color: var(--warning-color);
+}
+#warning:hover{
+    background-color: var(--warning-color-hover);
+    outline: var(--space-xxxs) solid var(--warning-color);
+}
+#warning:focus, #warning:active{
+    background-color: var(--warning-color-active);
+}
+
+/* error theme */
+#error{
+    color: var(--text-color-on-primary);
+    background-color: var(--error-color);
+}
+#error:hover{
+    background-color: var(--error-color-hover);
+    outline: var(--space-xxxs) solid var(--error-color);
+}
+#error:focus, #error:active{
+    background-color: var(--error-color-active);
+}

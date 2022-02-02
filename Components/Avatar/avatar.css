@@ -1,0 +1,23 @@
+
+.avatar{
+    object-fit: cover;
+}
+
+.round{
+    border-radius: 50%;
+}
+
+.md{
+    height: calc(0.5 * var(--width-unit));
+    width: calc(0.5 * var(--width-unit));
+}
+
+.sm{
+    height: calc(0.25 * var(--width-unit));
+    width: calc(0.25 * var(--width-unit));
+}
+
+.lg{
+    height: calc(0.75 * var(--width-unit));
+    width: calc(0.75 * var(--width-unit));
+}

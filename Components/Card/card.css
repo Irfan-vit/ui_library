@@ -21,8 +21,6 @@
 
 .content-row {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     position: relative;
 }
 
@@ -53,6 +51,11 @@
     bottom: 0%;
     font-size: var(--header2);
     color: white;
+    opacity: 0.5;
+}
+
+.title-overlay-bottom>i:hover{
+    opacity: 1;
 }
 
 .title-overlay-mid {
@@ -132,13 +135,11 @@ img {
 
 /* in-stock colors */
 
-#colors {
+.colors {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
 }
 
-#colors>div {
+.colors>div {
     margin-right: 10px;
     margin-top: 5px;
     border-radius: 50%;
@@ -146,18 +147,18 @@ img {
     cursor: pointer;
 }
 
-#red {
+.red-unit {
     padding: var(--space-xxs);
     background-color: red;
 
 }
 
-#blue {
+.blue-unit {
     padding: var(--space-xxs);
     background-color: blue;
 }
 
-#green {
+.green-unit {
     padding: var(--space-xxs);
     background-color: green;
 }

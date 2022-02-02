@@ -24,14 +24,14 @@
 
 /* in-stock colors */
 
-.colors {
+.status {
   display: flex;
   position: relative;
   display: inline;
 
 }
 
-.colors>div {
+.status>div {
   margin-right: 10px;
   margin-top: 5px;
   border-radius: 50%;

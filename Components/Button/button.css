@@ -3,36 +3,34 @@
 @import url('../../typography.css');
 
 /* common button styles */
-button{
+.btn{
     padding: var(--space-unit);
     border-radius: var(--space-sm);
     border: none;
     margin: 5px;
     cursor: pointer;
     min-width: var(--space-xxxl);
+    font-size: var(--helperText);
+    font-weight: bold;
+    box-shadow: var(--box-shadow-primary);
 }
-button > a{
+
+.btn > a{
     text-decoration: none;
     color: var(--text-color-on-primary);
 }
-button > a:focus,button > a:active{
+
+.btn > a:focus,button > a:active{
     text-decoration: none;
     color: var(--neutral-color);
 }
 
-button > span {
+.btn > span {
     margin-right: var(--space-xs);
-}
-
-.btn{
-    font-size: var(--helperText);
-    font-weight: bold;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset;
 }
 .btn:hover{
     outline: var(--space-xxxs) solid var(--neutral-color-200);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; 
+    box-shadow: var(--box-shadow-secondary); 
 }
 
 .large{
@@ -76,7 +74,7 @@ button > span {
     background-color: var(--text-on-disabled);
     color:var(--textColor);
     opacity: 0.7;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; 
+    box-shadow: var(--box-shadow-secondary); 
 }
 
 .btn_otl_primary{
@@ -95,7 +93,7 @@ button > span {
     background-color: var(--Primary-color-active);
     color:var(--text-color-on-primary);
     opacity: 0.7;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; 
+    box-shadow: var(--box-shadow-secondary); 
 }
 
 /* link button styles*/
@@ -112,7 +110,7 @@ button > span {
     cursor: pointer;
 }
 .link_btn:hover{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; 
+    box-shadow: var(--box-shadow-secondary); 
 }
 
 /* float button styles*/

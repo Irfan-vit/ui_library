@@ -23,6 +23,12 @@
     --space-xxxl:  calc(5.50 * var(--space-unit));
 
     --component-padding: var(--space-sm);
+
+    /* CCOMPONENT MEASURES */
+
+    --width-unit: 10em;
+    --width-xxxs: calc(1.7 * var(--width-unit));
+
 }
 
 
@@ -43,4 +49,10 @@ h5{
 }
 p{
     font-size: var(--header6);
+}
+span{
+    font-size:var(--copyrightText);
+}
+sub{
+    font-size:var(--copyrightText);
 }

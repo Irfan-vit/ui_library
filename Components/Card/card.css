@@ -1,0 +1,202 @@
+@import url("../../main.css");
+@import url('../../colors.css');
+@import url('../../typography.css');
+
+.container {
+    max-width: var(--width-xxxs);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: var(--space-sm);
+    box-shadow: RGBA(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: var(--space-xxs);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.content-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+/* titles */
+
+.title {
+    padding: var(--space-xs);
+}
+
+.title-top {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--space-xs);
+}
+
+.title-overlay-bottom {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    color: white;
+    padding: var(--space-xs);
+}
+
+.title-overlay-bottom>i {
+    position: absolute;
+    z-index: 2;
+    left: 90%;
+    bottom: 268%;
+    font-size: var(--header2);
+    color: white;
+}
+
+.title-overlay-mid {
+    position: absolute;
+    bottom: 40%;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    color: white;
+}
+
+/* utilites */
+
+.product-description {
+    color: var(--error-color);
+}
+
+.product-price {
+    margin-top: 10px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* margin for content of card */
+
+.about {
+    margin: var(--space-xs);
+}
+
+/* image to occupy mxaim size of the container */
+
+img {
+    width: 100%;
+}
+
+/* fixed sixe of small image for smaller cards*/
+
+.img-size {
+    width: 125px;
+}
+
+/* bages */
+
+.badge>i {
+    position: absolute;
+    z-index: 2;
+    left: 82%;
+    font-size: var(--header2)
+}
+
+.badge>h4 {
+    position: absolute;
+    z-index: 2;
+    left: 0%;
+    top: 20%;
+    font-size: var(--header2);
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* blur effect on images of cards */
+
+.blur {
+    z-index: 1;
+    opacity: 1;
+    filter: blur(3px);
+}
+
+.blur:hover {
+    opacity: 1;
+    z-index: 1;
+    filter: blur(0px);
+}
+
+/* in-stock colors */
+
+#colors {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#colors>div {
+    margin-right: 10px;
+    margin-top: 5px;
+    border-radius: 50%;
+    border: 0.5px solid black;
+    cursor: pointer;
+}
+
+#red {
+    padding: var(--space-xxs);
+    background-color: red;
+
+}
+
+#blue {
+    padding: var(--space-xxs);
+    background-color: blue;
+}
+
+#green {
+    padding: var(--space-xxs);
+    background-color: green;
+}
+
+/* icon styles */
+
+i {
+    margin-top: var(--space-md);
+    cursor: pointer;
+}
+
+.fa-heart:hover {
+    color: var(--error-color);
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: var(--space-md);
+    margin-top: var(--space-xxxs);
+}
+
+/* horizantal/vertical card styles */
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: calc(1.5 * var(--width-xxxs));
+}
+
+@media only screen and (max-width: 300px) {
+    .horizontal {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-width: 260px;
+    }
+}

@@ -3,7 +3,6 @@
 
 .badge-conatiner {
   display: flex;
-  flex-direction: row;
 }
 
 .badge {
@@ -25,10 +24,8 @@
 /* in-stock colors */
 
 .status {
-  display: flex;
   position: relative;
   display: inline;
-
 }
 
 .status>div {

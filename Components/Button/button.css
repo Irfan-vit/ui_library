@@ -7,7 +7,7 @@ button{
     padding: var(--space-unit);
     border-radius: var(--space-sm);
     border: none;
-    margin: 20px;
+    margin: 5px;
     cursor: pointer;
     min-width: var(--space-xxxl);
 }
@@ -106,7 +106,7 @@ button > span {
     font-size:var(--paragraph);
     font-weight: 600;
     padding: var(--space-sm) var(--space-unit);
-    margin: var(--space-xs);
+    margin: var(--space-xxs);
     border-radius: 1px;
     transition: all .3s ease-in-out;
     cursor: pointer;

@@ -1,0 +1,41 @@
+@import url("../../main.css");
+@import url('../../colors.css');
+@import url('../../typography.css');
+
+.input-container {
+    color: #333;
+    font-size: var(--header5);
+    margin: var(--space-md);
+    min-width: calc(0.8 * var(--width-xxxs));
+    width: 50%;
+}
+
+.input-label {
+    display: block;
+}
+
+.input-content {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--dark-color);
+    margin: var(--space-xs) 0;
+    padding: var(--space-xxxs);
+    font-size: var(--paragraph);
+    width: 100%;
+    transition: 0.2s ease-in-out;
+}
+
+/* Default validator for input*/
+.default-input input:focus{
+    border-bottom : 2px solid var(--primary-color);
+}
+
+/* Error validator for input*/
+.error-input input{
+    border-bottom : 2px solid var(--error-color);
+}
+
+/* Success validator for input*/
+.success-input input{
+    border-bottom : 2px solid var(--success-color);
+}

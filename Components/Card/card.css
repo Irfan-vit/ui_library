@@ -50,7 +50,7 @@
     position: absolute;
     z-index: 2;
     left: 90%;
-    bottom: 268%;
+    bottom: 0%;
     font-size: var(--header2);
     color: white;
 }

@@ -45,51 +45,51 @@
 }
 
 /* Default Button styles*/
-#default_btn{
+#default-btn{
     color: var(--text-color-inverted);
     background-color: var(--textColor);
 }
-#default_btn:hover{
+#default-btn:hover{
     background-color: var(--dark-neutral-color);
     outline: var(--space-xxxs) solid var(--default-color);
 }
-#default_btn:focus,#default_btn:active{
+#default-btn:focus,#default-btn:active{
     background-color: var(--dark-color);
 }
 
 /* outline button styles */
-.btn_otl_default{
+.btn-otl-default{
     background-color: var(--text-color-on-primary);
     color: var(--textColor);
     border: 2px solid #272727;
     box-shadow: none;
 }
 
-.btn_otl_default:hover{
+.btn-otl-default:hover{
     color: var(--text-color-inverted);
     background-color: var(--textColor);
 }
 
-.btn_otl_default:focus,.btn_otl_default:active{
+.btn-otl-default:focus,.btn-otl-default:active{
     background-color: var(--text-on-disabled);
     color:var(--textColor);
     opacity: 0.7;
     box-shadow: var(--box-shadow-secondary); 
 }
 
-.btn_otl_primary{
+.btn-otl-primary{
     background-color: var(--text-color-on-primary);
     color: var(--textColor);
     border: 2px solid var(--primary-color);
     box-shadow: none;
 }
 
-.btn_otl_primary:hover{
+.btn-otl-primary:hover{
     color: var(--text-color-on-primary);
     background-color: var(--primary-color);
 }
 
-.btn_otl_primary:focus,.btn_otl_primary:active{
+.btn-otl-primary:focus,.btn-otl-primary:active{
     background-color: var(--Primary-color-active);
     color:var(--text-color-on-primary);
     opacity: 0.7;
@@ -98,7 +98,7 @@
 
 /* link button styles*/
 
-.link_btn{
+.link-btn{
     border: none;
     background-color: var(--primary-sky-color);
     font-size:var(--paragraph);
@@ -109,7 +109,7 @@
     transition: all .3s ease-in-out;
     cursor: pointer;
 }
-.link_btn:hover{
+.link-btn:hover{
     box-shadow: var(--box-shadow-secondary); 
 }
 

@@ -31,11 +31,11 @@
 }
 
 /* Error validator for input*/
-.error-input input:focus{
+.error-input input{
     border-bottom : 2px solid var(--error-color);
 }
 
 /* Success validator for input*/
-.success-input input:focus{
+.success-input input{
     border-bottom : 2px solid var(--success-color);
 }

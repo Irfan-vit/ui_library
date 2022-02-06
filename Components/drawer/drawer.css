@@ -2,178 +2,86 @@
 @import url('../../colors.css');
 @import url('../../typography.css');
 
-/* mobile first approach */
-/* grids styling for nav-header  */
-.nav-container {
+.nav{
+  background-color: white;
+  width: 15rem;
+  height: 100vh;
+  position: static;
   display: flex;
-  flex-flow: column wrap;
-  align-items: space-around;
-  border-bottom: 1px solid var(--text-on-disabled);
-}
-
-.nav-container .row {
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-.logo {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  width: 100%;
-  margin: var(--space-xs);
-}
-
-.nav-container input {
-  width: 70%;
-  margin: auto;
-  background: none;
-  margin-bottom: var(--space-xs);
-}
-
-.menu-toggle {
-  color: var(--dark-color);
-  margin-left: 1rem;
-  font-size: 1.5rem;
-}
-
-.menu-toggle:hover,
-.menu-toggle:focus {
-  color: var(--primary-color);
-}
-
-/* pushing nav-items out of screen view */
-
-.main-menu {
-  position: fixed;
-  display: none;
-  left: -200px;
-  top: 0;
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: visible;
-  transition: left .3s ease;
-  z-index: 4;
-}
-
-/* styling for nav-items */
-
-.main-menu ul {
+  flex-flow: column nowrap;
   list-style: none;
-  margin: 0;
-  padding-top: var(--space-xl);
-  min-height: 100%;
-  width: 200px;
-  background-color: var(--dark-bg-color);
+  border: 0.5px solid rgba(53, 46, 46, 0.226);
 }
 
-.main-menu a {
-  display: block;
-  padding: var(--space-sm);
-  color: var(--text-color-on-primary);
-  text-decoration: none;
-  border-bottom: 1px solid var(--dark-color);
+.filter-menu-toggle{
+  display: none;
 }
 
-.main-menu button {
-  margin-top: var(--space-lg);
+.nav .nav-list{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  list-style: none;
 }
 
-.main-menu li:first-child a {
-  border-top: 1px solid var(--dark-color);
-}
-
-.main-menu a:hover,
-.main-menu a:focus {
-  background: var(--dark-color);
-  text-decoration: underline;
-}
-
-.main-menu .menu-close {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-/* getting nav-items on to screen on target */
-
-.main-menu:target {
-  display: block;
-  left: 0;
-  outline: none;
-}
-
-.main-menu:target ul {
-  position: relative;
-  z-index: 5;
-}
-
-.main-menu:target .menu-close {
-  z-index: 6;
-}
-
-.main-menu:target+.backdrop {
-  position: fixed;
-  display: block;
-  left: 0;
-  top: 0;
+.nav-item{
   width: 100%;
-  height: 100%;
-  z-index: 3;
-  background: rgba(8, 8, 8, 0.85);
-  cursor: default;
+  margin: 0px 10px;
 }
 
-/* desktop approach */
+.toggle-close{
+  display: none;
+}
 
-@media (min-width: 800px) {
-  .nav-container {
-    border: none;
-    margin: 0;
-  }
-  
-  /* hiding hambuger and close icons */
-  .menu-toggle,
-  .main-menu .menu-close {
-    display: none;
-  }
-
-  /* making the nav bar horizantal  */
-  .main-menu {
-    border-bottom: 1px solid var(--text-on-disabled);
-    padding: 0.3rem 0;
-    position: static;
+@media screen and (max-width:800px){
+  .filter-menu-toggle{
     display: block;
+    color: transparent;
   }
-
-  .main-menu ul {
-    padding: 0;
-    height: auto;
+  .nav{
+    position: fixed;
     width: auto;
     background: none;
-    overflow: hidden;
-    text-align: center;
+    height: 5rem;
+    bottom: 0;
+  }
+  .nav .nav-list{
+    display: none;
+    left: -200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: left 0.3s ease;
   }
 
-  .main-menu li {
-    display: inline-block;
+  .nav .nav-list:target{
+    height: 50%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom:0;
+    z-index: 999;
   }
 
-  .main-menu li:first-child a {
-    border-top: none;
+  .nav .nav-list:target + .backdrop {
+    position: fixed;
+    display: block;  
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: rgba(78, 78, 78, 0.418);
+    cursor: default;
   }
 
-  .main-menu a {
-    color: var(--primary-color);
-    border-bottom: none;
-    display: inline;
-  }
-
-  .main-menu a:hover,
-  .main-menu a:focus {
-    background: none;
-    color: var(--blue-color-400);
-    text-decoration: none;
-    border-bottom: 1px solid var(--dark-color);
+  .toggle-close{
+    display: block;
+    position: fixed;
+    right: 5%;
+    margin: auto;
+    color: transparent;
   }
 }
+

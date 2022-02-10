@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incredible UI</title>
+    <script src="https://kit.fontawesome.com/ae7ce8d210.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./Components/alert/alert.css">
+    <link rel="stylesheet" href="./Components/avatar/avatar.css">
+    <link rel="stylesheet" href="./Components/button/button.css">
+    <link rel="stylesheet" href="./Components/badge/badge.css">
+    <link rel="stylesheet" href="./Components/card/card.css">
+    <link rel="stylesheet" href="./Components/image/image.css">
+    <link rel="stylesheet" href="./Components/input/input.css">
+    <link rel="stylesheet" href="./Components/navbar/navbar.css">
+    <link rel="stylesheet" href="./Components/grid/grid.css">
+    <link rel="stylesheet" href="./Components/drawer/drawer.css">
+    <link rel="stylesheet" href="./doc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css">
+</head>
+
+<body>
+    <!-- nav-bar -->
+    <header class="nav-container doc-nav">
+        <div class="row">
+            <a href="#main-menu" id="main-menu-toggle" class="menu-toggle">
+                <span class="fa fa-bars"></span>
+            </a>
+
+            <div class="logo">
+                <a href="../index.html">
+                    <h3>Incredible UI</h3>
+                </a>
+            </div>
+        </div>
+        <nav id="main-menu" class="main-menu">
+            <a href="#main-menu-toggle" id="main-menu-close" class="menu-close">
+                <span class="fa fa-close" aria-hidden="true"></span>
+            </a>
+        </nav>
+        <a href="#main-menu-toggle" class="backdrop" tabindex="-1" hidden></a>
+    </header>
+
+    <!-- wrapper for sidebar and content -->
+    <div class="wrapper">
+        <div class="side-bar">
+            <aside class="nav">
+                <a href="#filter-menu" id="filter-menu-toggle" class="filter-menu-toggle">
+                    <button class="btn float">
+                        <span class="material-icons-outlined">
+                            filter_list
+                        </span>
+                    </button>
+                </a>
+                <ul class="nav-list" id="filter-menu" class="filter-menu">
+                    <li class="nav-item">
+                        <a class="toggle-close" href="">
+                            <button class="btn float" id="error">
+                                <span class="material-icons-outlined">
+                                    filter_list_off
+                                </span>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <h2>Components</h2>
+                    </li>
+                    <li class="nav-item"><a href="#install-doc">Guide</a></li>
+                    <li class="nav-item"><a href="#typography-doc">Typography</a></li>
+                    <li class="nav-item"><a href="#color-doc">Colors</a></li>
+                    <li class="nav-item"><a href="#alert-doc">Alert</a></li>
+                    <li class="nav-item"><a href="#avatar-doc">Avatar</a></li>
+                    <li class="nav-item"><a href="#badge-doc">Badge</a></li>
+                    <li class="nav-item"><a href="#button-doc">Button</a></li>
+                    <li class="nav-item"><a href="#card-doc">Card</a></li>
+                    <li class="nav-item"><a href="#image-doc">Image</a></li>
+                    <li class="nav-item"><a href="#input-doc">Input</a></li>
+                    <li class="nav-item"><a href="#grid-doc">Grid</a></li>
+                    <li class="nav-item"><a href="#drawer-doc">Drawer</a></li>
+                    <li class="nav-item"><a href="#nav-doc">Navbar</a></li>
+                </ul>
+                <a href="#filter-menu-toggle" class="backdrop" hidden></a>
+            </aside>
+        </div>
+        <div class="components">
+            <div id="install-doc">
+                <div class="header-component">
+                    <h1>Installation</h1>
+                    <p>In order to implement this UI to your project, Copy-paste the stylesheet
+                        <code>&lt;link&gt;</code> given below and paste it in the
+                        <code>&lt;head&gt;</code> of your project to load our styles.
+                    </p>
+                </div>
+                <div class="component-container">
+                    <div class="component-demo">
+                    </div>
+                    <pre><code class="html">&lt;link rel="stylesheet" href="https://incredibleui.netlify.app/main.css"&gt;</code></pre>
+                </div>
+            </div>
+            <div id="typography-doc">
+                <div class="header-component">
+                    <h1>Typography</h1>
+                    <p>The typography used in the project is shown below
+                    </p>
+                </div>
+                <div class="component-container">
+                    <div class="component-demo">
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 2</h4>
+                        <h5>Heading 5</h5>
+                        <h6>Heading 6</h6>
+                        <p>Paragraph</p>
+                        <span>copyrightText</span>
+                    </div>
+                    <div class="code-snippet">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%253EHeading%25201%253C%252Fh1%253E%250A%253Ch2%253EHeading%25202%253C%252Fh2%253E%250A%253Ch3%253EHeading%25203%253C%252Fh3%253E%250A%253Ch4%253EHeading%25202%253C%252Fh4%253E%250A%253Ch5%253EHeading%25205%253C%252Fh5%253E%250A%253Ch6%253EHeading%25206%253C%252Fh6%253E%250A%253Cp%253EParagraph%253C%252Fp%253E%250A%253Cspan%253EcopyrightText%253C%252Fspan%253E"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <div id="color-doc">
+                <div class="header-component">
+                    <h1>Colors</h1>
+                    <p>Below are the pre-defined colors used for creating different themes in our library
+                    </p>
+                </div>
+                <div class="component-container">
+                    <div class="component-demo">
+                        <div class="flex-colors">
+                            <div class="primary-colors">
+                                <div class="color-box primary-1">primary</div>
+                                <div class="color-box primary-2">peimary active</div>
+                                <div class="color-box primary-3">primary hover</div>
+                            </div>
+                            <div class="error-colors">
+                                <div class="color-box error-1">error</div>
+                                <div class="color-box error-2">error active</div>
+                                <div class="color-box error-3">error hover</div>
+                            </div>
+                            <div class="warning-colors">
+                                <div class="color-box warning-1">warning</div>
+                                <div class="color-box warning-2">warning active</div>
+                                <div class="color-box warning-3">warning hover</div>
+                            </div>
+                            <div class="success-colors">
+                                <div class="color-box success-1">success</div>
+                                <div class="color-box success-2">success active</div>
+                                <div class="color-box success-3">success hover</div>
+                            </div>
+                            <div class="neutral-colors">
+                                <div class="color-box neutral-1">neutral</div>
+                                <div class="color-box neutral-2">neutral active</div>
+                                <div class="color-box neutral-3">neutral hover</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="alert-doc">
+                <div class="header-component">
+                    <h1>Alerts</h1>
+                    <p>Alerts are used to attract user's attention for important information without interrupting the
+                        user's
+                        flow.
+                    </p>
+                </div>
+                <div class="component-container">
+                    <div class="component-demo">
+                        <section id="alert-container">
+                            <div id="primary" class="alert">
+                                <span class="material-icons-outlined">
+                                    info
+                                </span>
+                                <strong>Primary Alert</strong>
+                            </div>
+                            <div id="success" class="alert">
+                                <span class="material-icons-outlined">
+                                    check_circle_outline
+                                </span>
+                                <strong>Success Alert</strong>
+                            </div>
+                            <div id="warning" class="alert">
+                                <span class="material-icons-outlined">
+                                    warning_amber
+                                </span>
+                                <strong>Warning Alert</strong>
+                            </div>
+                            <div id="error" class="alert">
+                                <span class="material-icons-outlined">
+                                    dangerous
+                                </span>
+                                <strong>Error Alert</strong>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="code-snippet">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Csection%2520id%253D%2522alert-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520id%253D%2522primary%2522%2520class%253D%2522alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520info%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EPrimary%2520Alert%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520id%253D%2522success%2522%2520class%253D%2522alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520check_circle_outline%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253ESuccess%2520Alert%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520id%253D%2522warning%2522%2520class%253D%2522alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520warning_amber%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EWarning%2520Alert%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520id%253D%2522error%2522%2520class%253D%2522alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520dangerous%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EError%2520Alert%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fsection%253E"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="avatar-doc">
+                <div class="header-component">
+                    <h1>Avatars</h1>
+                    <p>Avatar can be used to show user's profile picture on profile information page, on navigation bar,
+                        in
+                        blogs grid items.
+                    </p>
+                </div>
+                <div class="component-container">
+                    <div class="component-demo">
+                        <img class="avatar round sm"
+                            src="https://images.unsplash.com/photo-1561409106-fece1abb71cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                            alt="avatar/image">
+                        <img class="avatar round md"
+                            src="https://images.unsplash.com/photo-1561409106-fece1abb71cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                            alt="avatar/image">
+                        <img class="avatar round lg"
+                            src="https://images.unsplash.com/photo-1561409106-fece1abb71cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                            alt="avatar/image">
+                        <img class="avatar sm"
+                            src="https://images.unsplash.com/photo-1561409106-fece1abb71cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                            alt="avatar/image">
+                        <img class="avatar md"
+                            src="https://images.unsplash.com/photo-1561409106-fece1abb71cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                            alt="avatar/image">
+                        <img class="avatar lg"
+                            src="https://images.unsplash.com/photo-1561409106-fece1abb71cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                            alt="avatar/image">
+                    </div>
+                    <div class="code-snippet">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar%2520round%2520sm%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Furl-of-the-image%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%252Fimage%2522%253E%250A%253Cimg%2520class%253D%2522avatar%2520round%2520md%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Furl-of-the-image%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%252Fimage%2522%253E%250A%253Cimg%2520class%253D%2522avatar%2520round%2520lg%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Furl-of-the-image%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%252Fimage%2522%253E%250A%253Cimg%2520class%253D%2522avatar%2520sm%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Furl-of-the-image%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%252Fimage%2522%253E%250A%253Cimg%2520class%253D%2522avatar%2520md%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Furl-of-the-image%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%252Fimage%2522%253E%250A%253Cimg%2520class%253D%2522avatar%2520lg%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Furl-of-the-image%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%252Fimage%2522%253E"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="badge-doc">
+                <div class="header-component">
+                    <h1>Badges</h1>
+                    <p>Badges are being used to display a notification count or status information</p>
+                </div>
+                <div class="component-container">
+                    <div class="component-demo">
+                        <div class="badge-conatiner">
+                            <div class="badge">
+                                <span class="material-icons-outlined">
+                                    notifications
+                                </span>
+                                <sup class="badge-icon">4</sup>
+                            </div>
+                            <div class="badge">
+                                <span class="material-icons-outlined">
+                                    shopping_bag
+                                </span>
+                                <sup class="badge-icon">4</sup>
+                            </div>
+                            <div class="badge">
+                                <span class="material-icons-outlined">
+                                    mail
+                                </span>
+                                <sup class="badge-icon">4</sup>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-conatiner%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520notifications%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csup%2520class%253D%2522badge-icon%2522%253E4%253C%252Fsup%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520shopping_bag%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csup%2520class%253D%2522badge-icon%2522%253E4%253C%252Fsup%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520mail%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csup%2520class%253D%2522badge-icon%2522%253E4%253C%252Fsup%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="button-doc">
+                <div>
+                    <div class="header-component">
+                        <h1>Buttons</h1>
+                        <p>Buttons are the soul of an interactive Web Application. Buttons allow users to take actions,
+                            and
+                            make
+                            choices, with a single tap.
+                        </p>
+                    </div>
+                    <h2>Call to action Buttons</h2>
+                    <div class="component-container">
+                        <div class="component-demo">
+                            <button class="btn" id="default-btn">default button</button>
+                            <button class="btn" id="primary">primary button</button>
+                            <button class="btn">secondary button</button>
+                            <button class="btn" id="success">success button</button>
+                            <button class="btn" id="warning">warning button</button>
+                            <button class="btn" id="error">error button</button>
+                            <button class="btn" disabled>disabled button</button>
+                            <br>
+                            <button class="btn large" id="default-btn">default button</button>
+                            <button class="btn large" id="primary">primary button</button>
+                            <button class="btn large">secondary button</button>
+                            <button class="btn large" id="success">success button</button>
+                            <button class="btn large" id="warning">warning button</button>
+                            <button class="btn large" id="error">error button</button>
+                            <button class="btn large" disabled>disabled button</button>
+                        </div>
+                        <div class="code-snippet">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2522%2520id%253D%2522default-btn%2522%253Edefault%2520button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2522%2520id%253D%2522primary%2522%253Eprimary%2520button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2522%253Esecondary%2520button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2522%2520id%253D%2522success%2522%253Esuccess%2520button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2522%2520id%253D%2522warning%2522%253Ewarning%2520button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2522%2520id%253D%2522error%2522%253Eerror%2520button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2522%2520disabled%253Edisabled%2520button%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520large%2522%2520id%253D%2522default-btn%2522%253Edefault%2520button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520large%2522%2520id%253D%2522primary%2522%253Eprimary%2520button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520large%2522%253Esecondary%2520button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520large%2522%2520id%253D%2522success%2522%253Esuccess%2520button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520large%2522%2520id%253D%2522warning%2522%253Ewarning%2520button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520large%2522%2520id%253D%2522error%2522%253Eerror%2520button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520large%2522%2520disabled%253Edisabled%2520button%253C%252Fbutton%253E"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="header-component">
+                        <h2>Outline buttons</h2>
+                    </div>
+                    <div class="component-container">
+                        <div class="component-demo">
+                            <button class="btn btn-otl-default">default button</button>
+                            <button class="btn btn-otl-primary">primary button</button>
+                        </div>
+                        <div class="code-snippet small-snippet">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-otl-default%2522%253Edefault%2520button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-otl-primary%2522%253Eprimary%2520button%253C%252Fbutton%253E"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="header-component">
+                        <h2>Button with link</h2>
+                    </div>
+                    <div class="component-container">
+                        <div class="component-demo">
+                            <button class="link-btn btn">
+                                <a href="#">Click Here</a>
+                            </button>
+                        </div>
+                        <div class="code-snippet small-snippet">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522link-btn%2520btn%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253EClick%2520Here%253C%252Fa%253E%250A%253C%252Fbutton%253E"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="header-component">
+                        <h2>Buttons with Icons</h2>
+                    </div>
+                    <div class="component-container">
+                        <div class="component-demo">
+                            <button class="btn" id="default-btn">
+                                <span class="material-icons-outlined">
+                                    send_and_archive
+                                </span>
+                                Send
+                            </button>
+                            <button class="btn" id="error">
+                                <span class="material-icons-outlined">
+                                    delete_outline
+                                </span>
+                                Delete
+                            </button>
+                            <button class="btn" id="primary">
+                                <span class="material-icons-outlined">
+                                    save
+                                </span>
+                                Save
+                            </button>
+                            <button class="btn">
+                                <span class="material-icons-outlined">
+                                    cloud_upload
+                                </span>
+                                Upload
+                            </button>
+                        </div>
+                        <div class="code-snippet">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2522%2520id%253D%2522default-btn%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520send_and_archive%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520Send%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2522%2520id%253D%2522error%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520delete_outline%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520Delete%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2522%2520id%253D%2522primary%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520save%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520Save%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520cloud_upload%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520Upload%250A%253C%252Fbutton%253E"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="header-component">
+                        <h2>Floating Action Buttons</h2>
+                    </div>
+                    <div class="component-container">
+                        <div class="component-demo">
+                            <button class="btn float" id="default-btn">
+                                <span class="material-icons-outlined">
+                                    menu_open
+                                </span>
+                            </button>
+                            <button class="btn float" id="error">
+                                <span class="material-icons-outlined">
+                                    close
+                                </span>
+                            </button>
+                            <button class="btn float" id="primary">
+                                <span class="material-icons-outlined">
+                                    notification_add
+                                </span>
+                            </button>
+                            <button class="btn float">
+                                <span class="material-icons-outlined">
+                                    add
+                                </span>
+                            </button>
+                        </div>
+                        <div class="code-snippet">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520float%2522%2520id%253D%2522default-btn%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520menu_open%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520float%2522%2520id%253D%2522error%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520close%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520float%2522%2520id%253D%2522primary%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520notification_add%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520float%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520add%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fbutton%253E"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="card-doc">
+                <div>
+                    <div class="header-component">
+                        <h1>Cards</h1>
+                        <p>Cards are used to show user related data collectively, like product details.</p>
+                    </div>
+                    <div class="component-container">
+                        <div class="component-demo">
+                            <div class="container">
+                                <figure class="content main">
+                                    <img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/3cd6ba48-cf35-4439-b0d5-0fe40ca05eb6/air-max-2021-shoes-MljWq1.png"
+                                        alt="Image of bubbles through a microscope." />
+                                    <figcaption class="title">
+                                        <h2>Nike Air Max</h2>
+                                        <p>Soft and Smooth.</p>
+                                    </figcaption>
+                                </figure>
+                                <div class="about">
+                                    <h5 class="product-description">Sustainable Materials</h5>
+                                    <p></p>
+                                    <p>Unisex</p>
+                                    <p>available in colors</p>
+                                    <div class="colors">
+                                        <div class="blue-unit"></div>
+                                        <div class="green-unit"></div>
+                                        <div class="red-unit"></div>
+                                    </div>
+                                    <h5 class="product-price">
+                                        ₹ 8,995
+                                    </h5>
+                                </div>
+                                <div class="icons">
+                                    <button class="btn btn-otl-default">Add To Cart</button>
+                                    <i class="far fa-heart"></i>
+                                    <i class="fas fa-share-alt"></i>
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="code-snippet">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%2520%2520%253Cfigure%2520class%253D%2522content%2520main%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253Aadd%252Fimage%2522%2520alt%253D%2522Image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cfigcaption%2520class%253D%2522title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253ENike%2520Air%2520Max%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESoft%2520and%2520Smooth.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffigcaption%253E%250A%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522about%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522product-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Sustainable%2520Materials%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EUnisex%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253Eavailable%2520in%2520colors%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522colors%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522blue-unit%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522green-unit%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522red-unit%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522product-price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%25E2%2582%25B9%25208%252C995%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh5%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-otl-default%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Add%2520To%2520Cart%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="component-container">
+                        <div class="component-demo">
+                            <div class="container">
+                                <figure class="content badge">
+                                    <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                                        alt="Image of bubbles through a microscope." />
+                                    <figcaption class="title">
+                                        <h2>Nike Air Max</h2>
+                                        <p>Soft and Smooth.</p>
+                                    </figcaption>
+                                    <i class="far fa-heart"></i>
+                                    <h4>NEW</h4>
+                                </figure>
+                                <div class="about">
+                                    <h5 class="product-description">Sustainable Materials</h5>
+                                    <p></p>
+                                    <p>Unisex</p>
+                                    <p>available in colors</p>
+                                    <div class="colors">
+                                        <div class="blue-unit"></div>
+                                        <div class="green-unit"></div>
+                                        <div class="red-unit"></div>
+                                    </div>
+                                    <h5 class="product-price">
+                                        ₹ 8,995
+                                    </h5>
+                                </div>
+                                <div class="icons">
+                                    <button class="btn full-width" id="default-btn">Add To Cart</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="code-snippet">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%2520%2520%253Cfigure%2520class%253D%2522content%2520badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253Aadd%252Fimage%2522%2520alt%253D%2522Image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cfigcaption%2520class%253D%2522title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253ENike%2520Air%2520Max%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESoft%2520and%2520Smooth.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffigcaption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253ENEW%253C%252Fh4%253E%250A%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522about%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522product-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Sustainable%2520Materials%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EUnisex%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253Eavailable%2520in%2520colors%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522colors%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522blue-unit%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522green-unit%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522red-unit%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522product-price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%25E2%2582%25B9%25208%252C995%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh5%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520full-width%2522%2520id%253D%2522default-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Add%2520To%2520Cart%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="component-container">
+                        <div class="component-demo">
+                            <div class="container horizontal">
+                                <figure class="content main horizantal-figure">
+                                    <img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/3cd6ba48-cf35-4439-b0d5-0fe40ca05eb6/air-max-2021-shoes-MljWq1.png"
+                                        alt="Image of bubbles through a microscope." width="125px" height="263px" />
+                                </figure>
+                                <div class="about">
+                                    <h2>Nike Air Max</h2>
+                                    <p>Soft and Smooth.</p>
+                                    <h5 class="product-description">Sustainable Materials</h5>
+                                    <p></p>
+                                    <p>Unisex</p>
+                                    <p>available in colors</p>
+                                    <div class="colors">
+                                        <div class="blue-unit"></div>
+                                        <div class="green-unit"></div>
+                                        <div class="red-unit"></div>
+                                    </div>
+                                    <h5 class="product-price">
+                                        ₹ 8,995
+                                    </h5>
+                                    <button class="btn" id="default-btn">Know More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="code-snippet">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2520horizontal%2522%253E%250A%2520%2520%2520%2520%253Cfigure%2520class%253D%2522content%2520main%2520horizantal-figure%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253Aadd%252Fimage%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Image.%2522%2520width%253D%2522125px%2522%2520height%253D%2522263px%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522about%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253ENike%2520Air%2520Max%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESoft%2520and%2520Smooth.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522product-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Sustainable%2520Materials%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EUnisex%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253Eavailable%2520in%2520colors%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522colors%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522blue-unit%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522green-unit%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522red-unit%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522product-price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%25E2%2582%25B9%25208%252C995%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2522%2520id%253D%2522default-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Know%2520More%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="component-container">
+                        <div class="component-demo">
+
+                            <div class="container">
+                                <figure class="content-row">
+                                    <img class="img-size"
+                                        src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                                        alt="Image of bubbles through a microscope." />
+                                    <figcaption class="title">
+                                        <h2>Nike Air Max</h2>
+                                        <p>Soft and Smooth.</p>
+                                    </figcaption>
+                                </figure>
+                                <button class="btn" id="default-btn">Know More</button>
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="fas fa-share-alt"></i>
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="code-snippet">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%2520%2520%253Cfigure%2520class%253D%2522content-row%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-size%2522%2520src%253D%2522https%253Aadd%252Fimage%2522%2520alt%253D%2522Image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cfigcaption%2520class%253D%2522title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253ENike%2520Air%2520Max%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESoft%2520and%2520Smooth.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffigcaption%253E%250A%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2522%2520id%253D%2522default-btn%2522%253EKnow%2520More%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="component-container">
+                        <div class="component-demo">
+
+                            <div class="container">
+                                <figure class="content">
+                                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                        alt="Image of bubbles through a microscope." />
+                                    <figcaption class="title-overlay-bottom">
+                                        <h2>Nike Air Max</h2>
+                                        <p>Soft and Smooth.</p>
+                                        <i class="fas fa-window-close"></i>
+                                    </figcaption>
+                                </figure>
+                                <div class="about">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, omnis qui
+                                        eius pariatur dolor expedita esse quasi laboriosam maxime, corporis
+                                        delectus. Voluptates numquam odio provident delectus excepturi
+                                        accusamus debitis cumque.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="code-snippet">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%2520%2520%253Cfigure%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253Aadd%252Fimage%2522%2520alt%253D%2522Image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cfigcaption%2520class%253D%2522title-overlay-bottom%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253ENike%2520Air%2520Max%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESoft%2520and%2520Smooth.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-window-close%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffigcaption%253E%250A%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522about%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Ab%252C%2520omnis%2520qui%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520eius%2520pariatur%2520dolor%2520expedita%2520esse%2520quasi%2520laboriosam%2520maxime%252C%2520corporis%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520delectus.%2520Voluptates%2520numquam%2520odio%2520provident%2520delectus%2520excepturi%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520accusamus%2520debitis%2520cumque.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="component-container">
+                        <div class="component-demo">
+
+                            <div class="container">
+                                <figure class="content">
+                                    <img class="blur"
+                                        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                        alt="Image of bubbles through a microscope." />
+                                    <figcaption class="title-overlay-mid">
+                                        <h2>Nike Air Max</h2>
+                                        <p>Soft and Smooth.</p>
+                                    </figcaption>
+                                </figure>
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="fas fa-share-alt"></i>
+                                    <i class="fas fa-ellipsis-v"></i>
+                                    <i class="fas fa-window-close"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="code-snippet">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%2520%2520%253Cfigure%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522blur%2522%2520src%253D%2522https%253Aadd%252Fimage%2522%2520alt%253D%2522Image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cfigcaption%2520class%253D%2522title-overlay-mid%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253ENike%2520Air%2520Max%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESoft%2520and%2520Smooth.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffigcaption%253E%250A%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-window-close%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="component-container">
+                        <div class="component-demo">
+
+                            <div class="container">
+                                <figure class="content title-top">
+                                    <h2>Nike Air Max</h2>
+                                    <p>Soft and Smooth.</p>
+                                </figure>
+                                <div class="about">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, omnis qui
+                                        eius pariatur dolor expedita esse quasi laboriosam maxime, corporis
+                                        delectus. Voluptates numquam odio provident delectus excepturi
+                                        accusamus debitis cumque.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="code-snippet">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%2520%2520%253Cfigure%2520class%253D%2522content%2520title-top%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253ENike%2520Air%2520Max%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESoft%2520and%2520Smooth.%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522about%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Ab%252C%2520omnis%2520qui%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520eius%2520pariatur%2520dolor%2520expedita%2520esse%2520quasi%2520laboriosam%2520maxime%252C%2520corporis%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520delectus.%2520Voluptates%2520numquam%2520odio%2520provident%2520delectus%2520excepturi%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520accusamus%2520debitis%2520cumque.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="component-container">
+                        <div class="component-demo">
+                            <div class="container">
+                                <div class="content title-top">
+                                    <h2>Nike Air Max</h2>
+                                    <p>Soft and Smooth.</p>
+                                </div>
+                                <figure class="main">
+                                    <img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/3cd6ba48-cf35-4439-b0d5-0fe40ca05eb6/air-max-2021-shoes-MljWq1.png"
+                                        alt="Image of bubbles through a microscope." />
+                                </figure>
+                                <div class="about">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, omnis qui
+                                        eius pariatur dolor expedita esse quasi laboriosam maxime, corporis
+                                        delectus. Voluptates numquam odio provident delectus excepturi
+                                        accusamus debitis cumque.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="code-snippet">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2520title-top%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253ENike%2520Air%2520Max%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESoft%2520and%2520Smooth.%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cfigure%2520class%253D%2522main%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253Aadd%252Fimage%2522%2520alt%253D%2522Image%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522about%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Ab%252C%2520omnis%2520qui%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520eius%2520pariatur%2520dolor%2520expedita%2520esse%2520quasi%2520laboriosam%2520maxime%252C%2520corporis%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520delectus.%2520Voluptates%2520numquam%2520odio%2520provident%2520delectus%2520excepturi%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520accusamus%2520debitis%2520cumque.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="image-doc">
+                <div class="header-component">
+                    <h1>Image</h1>
+                    <p>Responsive Images are used to dsiplay Images on websites, They
+                        expand upto the width of the container they are in.</p>
+                </div>
+                <div class="component-container">
+                    <div class="component-demo">
+                        <div class="responsive-images-container">
+                            <img class="responsive-img"
+                                src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/3cd6ba48-cf35-4439-b0d5-0fe40ca05eb6/air-max-2021-shoes-MljWq1.png"
+                                alt="Image of bubbles through a microscope." />
+                        </div>
+                        <div class="responsive-images-container">
+                            <img class="rounded-img"
+                                src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/3cd6ba48-cf35-4439-b0d5-0fe40ca05eb6/air-max-2021-shoes-MljWq1.png"
+                                alt="Image of bubbles through a microscope." />
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522responsive-images-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522responsive-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253Aadd%252Fimg%252Fsrc%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Image%2520of%2520bubbles%2520through%2520a%2520microscope.%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522responsive-images-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522rounded-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253Aadd%252Fimg%252Fsrc%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Image%2520of%2520bubbles%2520through%2520a%2520microscope.%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="input-doc">
+                <div class="header-component">
+                    <h1>Input</h1>
+                    <p>Inputs are used in forms to collect user related data.</p>
+                </div>
+                <div class="component-container">
+                    <div class="component-demo">
+                        <div class="input-container default-input">
+                            <label class="input-label">Default</label>
+                            <input type="text" class="input-content">
+                        </div>
+
+                        <div class="input-container error-input">
+                            <label class="input-label">Error</label>
+                            <input type="text" class="input-content">
+                        </div>
+
+                        <div class="input-container success-input">
+                            <label class="input-label">Success</label>
+                            <input type="text" class="input-content">
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-container%2520default-input%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522input-label%2522%253EDefault%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input-content%2522%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input-container%2520error-input%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522input-label%2522%253EError%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input-content%2522%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input-container%2520success-input%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522input-label%2522%253ESuccess%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input-content%2522%253E%250A%253C%252Fdiv%253E"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="grid-doc">
+                <div class="header-component">
+                    <h1>Grid</h1>
+                    <p>grida are used when you want sections in view.</p>
+                </div>
+                <div class="component-container">
+                    <div class="component-demo">
+                        <section class="collections">
+                            <h2>grid collection</h2>
+                            <ul>
+                                <li>
+                                    <figure class="color2">
+                                        <img src="../Components/grid/images/fitness.jpg" alt="Fitness shoes" />
+                                        <figcaption><a href="#">Fitness</a></figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure class="color7">
+                                        <img src="../Components/grid/images/sports.jpg" alt="Sport shoes" />
+                                        <figcaption><a href="#">Sport</a></figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure class="color3">
+                                        <img src="../Components/grid/images/track.jpg" alt="Track shoes" />
+                                        <figcaption><a href="#">Track</a></figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure class="color4">
+                                        <img src="../Components/grid/images/casual.jpg" alt="Casual shoes" />
+                                        <figcaption><a href="#">Casual</a></figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure class="color8">
+                                        <img src="../Components/grid/images/men.jpg" alt="Men's shoes" />
+                                        <figcaption><a href="#">Men</a></figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure class="color6">
+                                        <img src="../Components/grid/images/women.jpg" alt="Women's shoes" />
+                                        <figcaption><a href="#">Women</a></figcaption>
+                                    </figure>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="code-snippet">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Csection%2520class%253D%2522collections%2522%253E%250A%2520%2520%2520%2520%253Ch2%253Egrid%2520collection%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Cul%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cfigure%2520class%253D%2522color2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fadd%252Fimage%2522%2520alt%253D%2522image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cfigcaption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Fitness%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffigcaption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cfigure%2520class%253D%2522color7%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fadd%252Fimage%2522%2520alt%253D%2522image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cfigcaption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Sport%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffigcaption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cfigure%2520class%253D%2522color3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fadd%252Fimage%2522%2520alt%253D%2522image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cfigcaption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Track%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffigcaption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%253C%252Fsection%253E"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="drawer-doc">
+                <div class="header-component">
+                    <h1>Drawer</h1>
+                    <p>Navigation drawers provide access to destinations in your app.</p>
+                </div>
+                <div class="component-container">
+                    <div class="component-demo">
+                        <aside class="nav">
+                            <a href="#filter-menu" id="filter-menu-toggle" class="filter-menu-toggle">
+                            </a>
+                            <ul class="nav-list" id="filter-menu" class="filter-menu">
+                                <li class="nav-item">
+                                    <a class="toggle-close" href="">
+                                        <button class="btn float" id="error">
+                                            <span class="material-icons-outlined">
+                                                filter_list_off
+                                            </span>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <h3>Filter</h3>
+                                    <a href="">Clear</a>
+                                </li>
+                                <li class="nav-item">
+                                    <h4>Sort By Price</h4>
+                                    <ul>
+                                        <li><input type="radio" name="sort" id="descending"><label for="descending">
+                                                High-Low </label></li>
+                                        <li><input type="radio" name="sort" id="ascending"><label for="ascending">
+                                                Low-High </label></li>
+                                    </ul>
+                                </li>
+                                <hr>
+                                <li class="nav-item">
+                                    <h4>Category</h4>
+                                    <ul>
+                                        <li><input type="radio" name="category" id="category">
+                                            <label for="category"> Sports</label></li>
+                                        <li><input type="radio" name="category" id="category">
+                                            <label for="category">Track</label>
+                                        </li>
+                                        <li><input type="radio" name="category" id="category">
+                                            <label for="category">Casual</label>
+                                        </li>
+                                        <li><input type="radio" name="category" id="category">
+                                            <label for="category">Fitness</label>
+                                        </li>
+                                        <li><input type="radio" name="category" id="category">
+                                            <label for="category">Men</label>
+                                        </li>
+                                        <li><input type="radio" name="category" id="category">
+                                            <label for="category">Women</label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <hr>
+                                <li class="nav-item">
+                                    <h4>Availability</h4>
+                                    <ul>
+                                        <li><input type="checkbox" name="toggle-inventory" id="toggle-inventory"
+                                                checked=""><label for="toggle-inventory"> Include Out Of Stock </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <hr>
+                                <li class="nav-item">
+                                    <h4>Delivery</h4>
+                                    <ul>
+                                        <li><input type="checkbox" name="toggle-delivery" id="toggle-delivery"><label
+                                                for="toggle-delivery">
+                                                Fast Delivery Only </label></li>
+                                    </ul>
+                                </li>
+                                <hr>
+                                <li class="nav-item">
+                                    <h4>Price</h4>
+                                    <ul>
+                                        <li><input type="range" value="0" max="15000" oninput="num.value = this.value">
+                                            <output id="num">0</output></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                            <a href="#filter-menu-toggle" class="backdrop" hidden></a>
+                        </aside>
+                    </div>
+                    <div class="component-container">
+                        <div class="component-demo">
+                        </div>
+                        <pre><code class="html">
+   &lt;aside class="nav"&gt;
+    &lt;a href="#filter-menu" id="filter-menu-toggle" class="filter-menu-toggle"&gt;
+        &lt;button class="btn float"&gt;
+            &lt;span class="material-icons-outlined"&gt;
+                filter_list
+            &lt;/span&gt;
+        &lt;/button&gt;
+    &lt;/a&gt;
+    &lt;ul class="nav-list" id="filter-menu" class="filter-menu"&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;a class="toggle-close" href=""&gt;
+                &lt;button class="btn float" id="error"&gt;
+                    &lt;span class="material-icons-outlined"&gt;
+                        filter_list_off
+                    &lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;h3&gt;Filter&lt;/h3&gt;
+            &lt;a href=""&gt;Clear&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;h4&gt;Sort By&lt;/h4&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;input type="radio" name="sort" id="descending"&gt;&lt;label for="descending"&gt;
+                        Price:
+                        High-Low &lt;/label&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;input type="radio" name="sort" id="ascending"&gt;&lt;label for="ascending"&gt;
+                        Price:
+                        Low-High &lt;/label&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;hr&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;h4&gt;Category&lt;/h4&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;input type="radio" name="category" id="category"&gt;
+                    &lt;label for="category"&gt; Sports&lt;/label&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;input type="radio" name="category" id="category"&gt;
+                    &lt;label for="category"&gt;Track&lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;input type="radio" name="category" id="category"&gt;
+                    &lt;label for="category"&gt;Casual&lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;input type="radio" name="category" id="category"&gt;
+                    &lt;label for="category"&gt;Fitness&lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;input type="radio" name="category" id="category"&gt;
+                    &lt;label for="category"&gt;Men&lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;input type="radio" name="category" id="category"&gt;
+                    &lt;label for="category"&gt;Women&lt;/label&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;hr&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;h4&gt;Availability&lt;/h4&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;input type="checkbox" name="toggle-inventory" id="toggle-inventory"
+                        checked=""&gt;&lt;label for="toggle-inventory"&gt; Include Out Of Stock &lt;/label&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;hr&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;h4&gt;Delivery&lt;/h4&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;input type="checkbox" name="toggle-delivery" id="toggle-delivery"&gt;&lt;label
+                        for="toggle-delivery"&gt;
+                        Fast Delivery Only &lt;/label&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;hr&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;h4&gt;Price&lt;/h4&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;input type="range" value="0" max="15000" oninput="num.value = this.value"&gt;
+                    &lt;output id="num"&gt;0&lt;/output&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+
+    &lt;/ul&gt;
+    &lt;a href="#filter-menu-toggle" class="backdrop" hidden&gt;&lt;/a&gt;
+&lt;/aside&gt;
+                        </code></pre>
+                    </div>
+                </div>
+                <hr>
+                <div id="nav-doc">
+                    <div class="header-component">
+                        <h1>Nav-bar</h1>
+                        <p>The navigation bar is one of the most vital aspects of building an app. It tells users about
+                            the
+                            information and actions relating to the current screen
+                        </p>
+                    </div>
+                    <div class="component-container">
+                        <div class="component-demo">
+                            <header class="nav-container">
+                                <div class="row">
+                                    <a href="#main-menu" id="main-menu-toggle" class="menu-toggle">
+                                        <span class="fa fa-bars"></span>
+                                    </a>
+                                    <div class="logo">
+                                        <h3>Name</h3>
+                                        <div class="badge-conatiner">
+                                            <div class="badge">
+                                                <span class="material-icons-outlined">
+                                                    notifications
+                                                </span>
+                                                <sup class="badge-icon">4</sup>
+                                            </div>
+                                            <div class="badge">
+                                                <span class="material-icons-outlined">
+                                                    shopping_bag
+                                                </span>
+                                                <sup class="badge-icon">4</sup>
+                                            </div>
+                                            <div class="status">
+                                                <img class="avatar round sm"
+                                                    src="https://images.unsplash.com/photo-1561409106-fece1abb71cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                                    alt="avatar/image">
+                                                <div class="online"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="text" placeholder="search" class="input-content">
+                                <nav id="main-menu" class="main-menu">
+                                    <a href="#main-menu-toggle" id="main-menu-close" class="menu-close">
+                                        <span class="fa fa-close" aria-hidden="true"></span>
+                                    </a>
+                                    <ul>
+                                        <li><a href="#">Casual</a></li>
+                                        <li><a href="#">Fitness</a></li>
+                                        <li><a href="#">Track</a></li>
+                                        <li><a href="#">Sports</a></li>
+                                        <li><a href="#">Men</a></li>
+                                        <li><a href="#">Women</a></li>
+                                        <li><button class="btn" id="default-btn">Account</button></li>
+                                        <li><button class="btn" id="primary">Orders</button></li>
+                                        <li><button class="btn" id="warning">Sign Out</button></li>
+                                    </ul>
+                                </nav>
+                                <a href="#main-menu-toggle" class="backdrop" tabindex="-1" hidden></a>
+                            </header>
+                        </div>
+                        <div class="code-snippet">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cheader%2520class%253D%2522nav-container%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522row%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523main-menu%2522%2520id%253D%2522main-menu-toggle%2522%2520class%253D%2522menu-toggle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522fa%2520fa-bars%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522logo%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253EName%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-conatiner%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520notifications%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csup%2520class%253D%2522badge-icon%2522%253E4%253C%252Fsup%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520shopping_bag%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csup%2520class%253D%2522badge-icon%2522%253E4%253C%252Fsup%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522status%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520round%2520sm%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522http%253A%252F%252Fadd%252Fimage%252Favatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%252Fimage%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522online%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522search%2522%2520class%253D%2522input-content%2522%253E%250A%2520%2520%2520%2520%253Cnav%2520id%253D%2522main-menu%2522%2520class%253D%2522main-menu%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523main-menu-toggle%2522%2520id%253D%2522main-menu-close%2522%2520class%253D%2522menu-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522fa%2520fa-close%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%2523%2522%253ECasual%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%2523%2522%253EFitness%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%2523%2522%253ETrack%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%2523%2522%253ESports%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%2523%2522%253EMen%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%2523%2522%253EWomen%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Cbutton%2520class%253D%2522btn%2522%2520id%253D%2522default-btn%2522%253EAccount%253C%252Fbutton%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Cbutton%2520class%253D%2522btn%2522%2520id%253D%2522primary%2522%253EOrders%253C%252Fbutton%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Cbutton%2520class%253D%2522btn%2522%2520id%253D%2522warning%2522%253ESign%2520Out%253C%252Fbutton%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%253C%252Fnav%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523main-menu-toggle%2522%2520class%253D%2522backdrop%2522%2520tabindex%253D%2522-1%2522%2520hidden%253E%253C%252Fa%253E%250A%253C%252Fheader%253E"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+            integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+        <script>
+            hljs.highlightAll();
+        </script>
+</body>
+
+</html>

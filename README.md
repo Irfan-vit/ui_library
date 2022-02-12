@@ -68,7 +68,8 @@ You can acess the content from our **[documentation website](https://incredibleu
 - Image
 - Input
 - Grid
-- DrawerNavbar
+- Drawer
+- Navbar
 
 <br />
 
